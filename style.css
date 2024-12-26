@@ -1,0 +1,87 @@
+/* Общие стили для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок h1 */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff; /* Белый цвет */
+    margin-top: 30px;
+}
+
+/* Навигационная панель */
+nav {
+    background-color: #FFDD00; /* Желтый фон для панели */
+}
+
+nav a {
+    color: #000; /* Черный цвет для текста в навигации */
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Стили для кнопок */
+button, .btn {
+    background-color: #FFDD00; /* Яркий желтый цвет для кнопок */
+    color: #000; /* Черный текст на кнопке */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #ffcc00; /* Светло-желтый цвет при наведении */
+}
+
+/* Карточки для направлений */
+.card {
+    margin-bottom: 20px;
+    border: 2px solid #FFDD00; /* Желтая рамка для карточек */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #FFDD00; /* Желтый цвет для заголовков карточек */
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Секция для направлений */
+.container {
+    margin-top: 20px;
+}
+
+/* Адаптивность для разных экранов */
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 50%; /* 2 карточки в ряд на меньших экранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-3 {
+        flex: 0 0 100%; /* 1 карточка в ряд на маленьких экранах */
+    }
+}
